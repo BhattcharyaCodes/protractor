@@ -1,7 +1,7 @@
 let MongoClient = require('mongodb').MongoClient;
 let url = "mongodb://localhost:27017/";
 
-const csvFilePath = '/Users/sankalanparajuli/repos/protractor-test/report.csv'
+const csvFilePath = '/Users/animesh/repos/protractor-test/report.csv'
 const csv = require('csvtojson')
 
 csv()

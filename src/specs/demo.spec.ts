@@ -16,4 +16,19 @@ describe('protractor with typescript typings', () => {
     expect(await todoList.count()).toEqual(2);
     expect(await todoList.get(1).getText()).toEqual('build an AngularJS app');
   });
+
+  it('should load the header for the angularjs', aysnc() => {
+  xpath_loc = '/html/body/div[1]/div[1]/div/h2';
+  expect(await element(by.xpath(xpath_loc)).toEqual('AngularJS');
+  });
+
+  it('should load the basics section', async() => {
+  basics_id = 'the-basics';
+  expected_text = 'The Basics';
+
+  expect(await element(by.id(basics_id)).toEqual()expected_text);
+  });
+
+//   it('should load th')
+
 });
